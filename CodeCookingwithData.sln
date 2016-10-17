@@ -5,6 +5,19 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCookingwithData", "CodeCookingwithData\CodeCookingwithData.csproj", "{4F15D381-0EB4-45ED-97DC-6AECC5FB3B0C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{D8676C65-9A67-4447-9171-0FE904CE4E57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{3AC67C1A-142F-4964-85BE-F8A56BE19C8B}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{040E315B-56BE-4D5C-99DC-DDD7F7CA69F0}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\CodeCookingwithData.json = PublishScripts\Templates\CodeCookingwithData.json
+		PublishScripts\Templates\CodeCookingwithData.param.dev.json = PublishScripts\Templates\CodeCookingwithData.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3AC67C1A-142F-4964-85BE-F8A56BE19C8B} = {D8676C65-9A67-4447-9171-0FE904CE4E57}
+		{040E315B-56BE-4D5C-99DC-DDD7F7CA69F0} = {D8676C65-9A67-4447-9171-0FE904CE4E57}
 	EndGlobalSection
 EndGlobal
