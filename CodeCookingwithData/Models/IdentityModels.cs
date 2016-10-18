@@ -21,7 +21,7 @@ namespace CodeCookingwithData.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<PassingStatsModel> PassingStats { get; set; }
-
+        public DbSet<RushingStatsModel> RushingStats { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
