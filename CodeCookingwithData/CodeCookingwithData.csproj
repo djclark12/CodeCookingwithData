@@ -185,11 +185,16 @@
     <Compile Include="Migrations\201610181932190_RushingStatsTableandUpdateColumnsinPassingTable.Designer.cs">
       <DependentUpon>201610181932190_RushingStatsTableandUpdateColumnsinPassingTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610181948358_ReceivingTable.cs" />
+    <Compile Include="Migrations\201610181948358_ReceivingTable.Designer.cs">
+      <DependentUpon>201610181948358_ReceivingTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PassingStatsModel.cs" />
+    <Compile Include="Models\ReceiverStatsModel.cs" />
     <Compile Include="Models\RushingStatsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -271,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610181932190_RushingStatsTableandUpdateColumnsinPassingTable.resx">
       <DependentUpon>201610181932190_RushingStatsTableandUpdateColumnsinPassingTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610181948358_ReceivingTable.resx">
+      <DependentUpon>201610181948358_ReceivingTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

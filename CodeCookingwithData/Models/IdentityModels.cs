@@ -22,6 +22,7 @@ namespace CodeCookingwithData.Models
     {
         public DbSet<PassingStatsModel> PassingStats { get; set; }
         public DbSet<RushingStatsModel> RushingStats { get; set; }
+        public DbSet<ReceiverStatsModel> ReceiverStats { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

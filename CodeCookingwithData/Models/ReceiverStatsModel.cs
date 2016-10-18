@@ -1,13 +1,10 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 
 namespace CodeCookingwithData.Models
 {
-    public class RushingStatsModel
+    public class ReceiverStatsModel
     {
-        [Key]
         public int Id { get; set; }
-
         public string PlayerId { get; set; }
         public string PlayerName { get; set; }
         public int Age { get; set; }
@@ -19,9 +16,12 @@ namespace CodeCookingwithData.Models
         public int GameNum { get; set; }
         public int Week { get; set; }
         public DayOfWeek DayOfWeek { get; set; }
-        public int RushAtt { get; set; }
-        public int RushYds { get; set; }
-        public decimal RushYdsperAtt { get; set; }
-        public int RushTds { get; set; }
+        public int Targets { get; set; }
+        public int Receptions { get; set; }
+        public int RecYds { get; set; }
+        public decimal YdsperRec { get; set; }
+        public int RecTds { get; set; }
+        public decimal CtchPercent { get; set; }
+        public decimal YdsperTgt { get; set; }
     }
 }
