@@ -20,7 +20,7 @@ namespace CodeCookingwithData.Models
         public string Result { get; set; }
         public int GameNum { get; set; }
         public int Week { get; set; }
-        public DayOfWeek DayOfWeek { get; set; }
+        public string DayOfWeek { get; set; }
         public int PassCmp { get; set; }
         public int PassAtt { get; set; }
         public decimal CmpPercent { get; set; }

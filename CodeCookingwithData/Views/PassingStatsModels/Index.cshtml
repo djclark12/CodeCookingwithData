@@ -1,0 +1,147 @@
+﻿@model IEnumerable<CodeCookingwithData.Models.PassingStatsModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PlayerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Team)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsAway)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OppTeam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GameNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Week)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DayOfWeek)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassCmp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassAtt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CmpPercent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassYds)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassTds)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Interceptions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassYdsperAtt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassAdjYdsperAtt)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlayerId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Team)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsAway)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OppTeam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GameNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Week)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DayOfWeek)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassCmp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassAtt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CmpPercent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassYds)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassTds)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Interceptions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rating)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassYdsperAtt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassAdjYdsperAtt)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

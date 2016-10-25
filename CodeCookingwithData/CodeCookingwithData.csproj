@@ -198,6 +198,10 @@
     <Compile Include="Migrations\201610252152191_PassingStatsTable1.Designer.cs">
       <DependentUpon>201610252152191_PassingStatsTable1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610252225069_PassingStatsTable2.cs" />
+    <Compile Include="Migrations\201610252225069_PassingStatsTable2.Designer.cs">
+      <DependentUpon>201610252225069_PassingStatsTable2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -206,7 +210,7 @@
     <Compile Include="Models\ReceiverStatsModel.cs" />
     <Compile Include="Models\RushingStatsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quarterbacks\QuarterbackController.cs" />
+    <Compile Include="Quarterbacks\PassingStatsModelsController.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -265,6 +269,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\PassingStatsModels\Create.cshtml" />
+    <Content Include="Views\PassingStatsModels\Delete.cshtml" />
+    <Content Include="Views\PassingStatsModels\Details.cshtml" />
+    <Content Include="Views\PassingStatsModels\Edit.cshtml" />
+    <Content Include="Views\PassingStatsModels\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -294,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610252152191_PassingStatsTable1.resx">
       <DependentUpon>201610252152191_PassingStatsTable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610252225069_PassingStatsTable2.resx">
+      <DependentUpon>201610252225069_PassingStatsTable2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
