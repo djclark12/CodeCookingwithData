@@ -1,11 +1,13 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CodeCookingwithData.Models
 {
     public class PassingStatsModel
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         public string PlayerId { get; set; }
@@ -21,7 +23,7 @@ namespace CodeCookingwithData.Models
         public DayOfWeek DayOfWeek { get; set; }
         public int PassCmp { get; set; }
         public int PassAtt { get; set; }
-        public int CmpPercent { get; set; }
+        public decimal CmpPercent { get; set; }
         public int PassYds { get; set; }
         public int PassTds { get; set; }
         public int Interceptions { get; set; }
