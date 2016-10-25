@@ -1,8 +1,7 @@
 namespace CodeCookingwithData.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class RushingStatsTableandUpdateColumnsinPassingTable : DbMigration
     {
         public override void Up()
